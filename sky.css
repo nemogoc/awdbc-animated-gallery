@@ -1,0 +1,98 @@
+body {
+  margin: 0 0 0 0;
+  background-color: #2c3e50;
+  animation-name: sky;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.grass {
+  background: green;
+  height: 1200px;
+  width: 100%;
+  position: absolute;
+  animation-name: grass;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.sun {
+  background: #f1c40f;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation-name: sun;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sky {
+  0% {
+    background-color: #2c3e50;
+  }
+  10% {
+    background-color: pink;
+  }
+  30% {
+    background-color: lightskyblue;
+  }
+  70%{
+    background-color: lightskyblue;
+  }
+  90%{
+    background-color: pink;
+  }
+  100%{
+    background-color: #2c3e50;
+  }
+}
+
+@keyframes sun {
+  0% {
+    background-color: orange;
+    transform: translate(0, 100px);
+  }
+  25% {
+    background-color: yellow;
+    transform: translate(420px, 0);
+  }
+  50% {
+    background-color: yellow;
+    transform: translate(840px, -100px);
+  }
+  75% {
+    background-color: yellow;
+    transform: translate(1260px, 0);
+  }
+  100% {
+    background-color: orangered;
+    transform: translate(1680px, 100px);
+  }
+}
+
+@keyframes grass {
+  0% {
+    background-color: darkolivegreen;
+  }
+  10% {
+    background-color: darkgreen;
+  }
+  30% {
+    background-color: green;
+  }
+  70%{
+    background-color: green;
+  }
+  90%{
+    background-color: darkgreen;
+  }
+  100%{
+    background-color: darkolivegreen;
+  }
+}
