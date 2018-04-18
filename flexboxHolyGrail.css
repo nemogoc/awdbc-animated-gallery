@@ -1,0 +1,53 @@
+* {
+  /*border: 1px solid red;*/
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  min-height: 800px;
+}
+
+article {
+  /*flex: 1 1 55%;*/
+  flex: 1 1 60%;
+  /*set to 60% once you remove border*/
+}
+
+nav {
+  flex: 1 4 20%;
+  order: -1;
+}
+
+aside {
+  flex: 1 4 20%;
+  order: 1;
+}
+
+footer {
+  display: flex;
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 640px){
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    order: -2;
+  }
+}
